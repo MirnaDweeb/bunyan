@@ -1,0 +1,22 @@
+.cardstatus{
+    height: 160px;
+    background-color: var(--third-color);
+    border-radius: 12px;
+    box-shadow: 7px 7px 11px -4px rgba((0,0,0,0.25), green, blue, alpha);
+    max-width: 280px;
+}
+.icon{
+    font-size: 2rem;
+    color: var(--main-color);
+}
+.info{
+    color:var(--main-color);
+ 
+}
+.counter,.title{
+     font-size: 1.1rem;
+    font-weight: bold;
+}
+.counter{
+    font-size: 2rem;
+}

@@ -1,8 +1,11 @@
+import{Routes,Route} from "react-router-dom"
 import React from "react";
 import Navbar from "../../Component/Dashboard/Navbar/Navbar";
 import Footer from "../../Component/Dashboard/Footer/Footer";
 import Sidebar from "../../Component/Dashboard/Sidebar/Sidebar";
-
+import Projects from "./Projects"
+import Users from "./Users"
+import HomeDashboard from "./HomeDashboard"
 function Dashboard() {
   return (
     <>
@@ -10,8 +13,13 @@ function Dashboard() {
       <div className="d-flex">
         <Sidebar />
      <main className="flex-grow-1 p-4">
-      <h1>test content Component</h1>
+      <Routes>
+      <Route path="/" element={<HomeDashboard/>}/>
+      <Route path="/users" element={<Users/>}/>
+      <Route path="/projects" element={<Projects/>}/>
+     </Routes>
      </main>
+     
       </div>
       <Footer />
     </>
